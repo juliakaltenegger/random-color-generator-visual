@@ -15,6 +15,7 @@
   vertical-align: middle;
   margin: 0 auto;
   width: 85%;
+  padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   flex-direction: column;
@@ -23,9 +24,9 @@
   font-size: calc(10px + 2vmin);
   color: #000000;
 }
-.App-popover {
-  vertical-align: right;
-}
+/* .App-popover {
+  vertical-align: ;
+} */
 
 .App-link {
   color: #61dafb;
