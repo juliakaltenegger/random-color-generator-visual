@@ -1,37 +1,13 @@
+/*.App ist der Bereich links und rechts vom header*/
 .App {
-  text-align: center;
 }
 
+/*.App-logo wirklich nur das runde Logo mit dem quadratischen Dingsi rundherum*/
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
-  height: 25vmin;
+  height: 40vmin;
   pointer-events: none;
 }
-
-.App-header {
-  background-color: #ffffff;
-  min-height: 50vh;
-  display: flex;
-  vertical-align: middle;
-  margin: 0 auto;
-  width: 85%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #000000;
-}
-/* .App-popover {
-  vertical-align: ;
-} */
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,4 +15,83 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*.App-header ist der gesamte header*/
+.App-header {
+  background-color: #ffffff;
+  min-height: 50vh;
+  display: flex;
+  vertical-align: middle;
+  margin: 0 auto;
+  padding: 30px;
+  /* % bei width bestimmt hier wieviel .App ist */
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  /* options for flex-direction:
+  -row (default): same as text direction
+  -row-reverse: opposite to text direction
+  -column: same as row but top to bottom
+  -column-reverse: same as row-reverse top to bottom */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-headline {
+  color: #5f70d3;
+}
+
+.whatsThisButton {
+  border-radius: 10px;
+  padding: 10px;
+  border: dotted 2px #000000;
+  background-color: #ffffff;
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-align: center;
+}
+
+.whatsThisHide {
+  display: none;
+}
+
+.whatsThisShow {
+  color: #ff0000;
+}
+
+.Body {
+  display: flex;
+  block-size: 100px;
+  /* in connection with display: flex und width: 85% macht margin: 0 auto, dass der body-Bereich links und rechts einen Abstand einfügt (wie auch beim header*/
+  margin: 0 auto;
+  padding: 30px;
+  justify-content: space-around;
+
+  width: 85%;
+}
+
+.generateColorButton {
+  background-color: #8d4a4a;
+  height: 50px;
+  font: bold;
+}
+
+.hueButton {
+  background-color: white;
+  width: 120px;
+  height: 50px;
+}
+
+.luminosityButton {
+  background-color: white;
+  width: 120px;
+
+  height: 50px;
+}
+
+.App-link {
+  color: #61dafb;
 }
